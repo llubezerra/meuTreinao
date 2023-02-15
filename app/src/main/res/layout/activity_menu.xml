@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".activity.MenuActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="abc"
-        android:gravity="center"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meu_treinao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMenuList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

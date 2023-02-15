@@ -26,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun playVideo() {
         val mVideoView: VideoView = binding.GIF
-        val uri: Uri = Uri.parse("android.resource://com.cursoandoid.meutreinao/${R.raw.mt_gif}")
+        val uri = Uri.parse("android.resource://com.cursoandoid.meutreinao/${R.raw.mt_gif}")
 
         mVideoView.setVideoURI(uri)
         mVideoView.requestFocus()
@@ -37,7 +37,7 @@ class SplashActivity : AppCompatActivity() {
         Handler().postDelayed({
             startActivity(Intent(this, MenuActivity::class.java))
             finish()
-        }, 2000)
+        }, 3000)
     }
 
 }
